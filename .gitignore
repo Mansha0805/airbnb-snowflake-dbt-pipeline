@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.venv/
+
+# dbt
+target/
+dbt_packages/
+logs/
+
+# dbt local user config — never commit this
+.user.yml
+
+# Snowflake credentials — never commit this
+profiles.yml
+
+# Environment variables
+.env
+
+# OS
+.DS_Store
+Thumbs.db

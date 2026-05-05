@@ -1,0 +1,11 @@
+[project]
+name = "airbnb-snowflake-dbt-pipeline"
+version = "1.0.0"
+description = "End-to-end data engineering pipeline for Airbnb data using Snowflake, dbt, and AWS S3 — medallion architecture (Bronze → Silver → Gold)."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dbt-core>=1.11.2",
+    "dbt-snowflake>=1.11.0",
+    "sqlfmt>=0.0.3",
+]

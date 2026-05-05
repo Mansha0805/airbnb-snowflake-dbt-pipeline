@@ -1,0 +1,17 @@
+# Example Snowflake connection profile for dbt
+# Copy this file to ~/.dbt/profiles.yml and fill in your actual credentials.
+# NEVER commit your real profiles.yml to version control.
+
+aws_dbt_snowflake_project:
+  outputs:
+    dev:
+      account: <your-snowflake-account-identifier>
+      database: AIRBNB
+      password: <your-snowflake-password>
+      role: ACCOUNTADMIN
+      schema: dbt_schema
+      threads: 4
+      type: snowflake
+      user: <your-snowflake-username>
+      warehouse: COMPUTE_WH
+  target: dev
